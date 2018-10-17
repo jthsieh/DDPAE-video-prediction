@@ -1,0 +1,3 @@
+[submodule "datasets/bouncing_balls"]
+	path = datasets/bouncing_balls
+	url = https://github.com/jthsieh/dynamics.git
