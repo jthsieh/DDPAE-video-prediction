@@ -57,17 +57,7 @@ def evaluate(opt, dloader, model, use_saved_file=False):
   if is_bouncing_balls:
     dloader.dataset.return_positions = True
     saved_positions = os.path.join(opt.ckpt_path, 'positions.npy') if use_saved_file else ''
-    if os.path.exists(saved_positions) and use_saved_file:
-      # Load pre-saved positions, no need to go calculate again.
-      velocity_metric = utils.VelocityMetrics()
-      pred, gt = np.load(saved_positions)
-      print('Calculating velocity metrics from saved positions.')
-      velocity_metric.calculate_metrics(pred, gt, opt.n_frames_input)
-      results.update(velocity_metric.get_scores())
-      is_bouncing_balls = False
-      dloader.dataset.return_positions = False
-    else:
-      velocity_metric = utils.VelocityMetrics(saved_positions)
+    velocity_metric = utils.VelocityMetrics(saved_positions)
 
   count = 0
   for step, data in enumerate(dloader):

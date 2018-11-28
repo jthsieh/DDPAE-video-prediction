@@ -6,7 +6,7 @@ This is the code for the paper
 <br>
 [Jun-Ting Hsieh](https://jthsieh.github.io/), [Bingbin Liu](https://clarabing.github.io/), [De-An Huang](http://ai.stanford.edu/~dahuang/), [Li Fei-Fei](http://vision.stanford.edu/feifeili/), [Juan Carlos Niebles](http://www.niebles.net/)
 
-Will be presented at [NIPS 2018](https://nips.cc/).
+Will be presented at [NeurIPS 2018](https://nips.cc/).
 
 <img src="images/NIPS18_DDPAE.png" width="600px"/>
 
@@ -27,7 +27,7 @@ If you find this code useful in your research then please cite:
 @inproceedings{hsieh2018learning,
   title={Learning to Decompose and Disentangle Representations for Video Prediction},
   author={Hsieh, Jun-Ting and Liu, Bingbin and Huang, De-An and Fei-Fei, Li and Niebles, Juan Carlos},
-  booktitle={NIPS},
+  booktitle={NeurIPS},
   year={2018}
 }
 ```
