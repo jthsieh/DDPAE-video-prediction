@@ -86,7 +86,7 @@ Run
 ```
 In our paper, we let the model train for 200k iterations. However, 50k iterations should be enough to see the model separating the two digits.
 
-### Moving MNIST
+### Bouncing Balls
 Run
 ```
 ./scripts/train_balls.sh
